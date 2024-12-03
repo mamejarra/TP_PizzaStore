@@ -3,9 +3,9 @@ namespace PizzaStore.Models
 {
     public class Pizza
     {
-        public int IdEhod { get; set; }
-        public string? NomEhod { get; set; }
-        public string? DescriptionEhod { get; set; }
+        public int Id { get; set; }
+        public string? NomPizza { get; set; }
+        public string? DescriptionPizza { get; set; }
     }
 
     class PizzaDb : DbContext
