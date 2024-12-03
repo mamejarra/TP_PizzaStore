@@ -4,8 +4,8 @@ namespace PizzaStore.Models
     public class Pizza
     {
         public int Id { get; set; }
-        public string? NomPizza { get; set; }
-        public string? DescriptionPizza { get; set; }
+        public string? Nom { get; set; }
+        public string? Description { get; set; }
     }
 
     class PizzaDb : DbContext
