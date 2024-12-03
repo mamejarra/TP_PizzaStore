@@ -21,4 +21,5 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "PizzaStore API V1");
 });
 app.MapGet("/", () => "Bonjour Sénégal!");
+app.MapGet("/pizzas", async (PizzaDb db) => await db.Pizzas.ToListAsync());
 app.Run();
